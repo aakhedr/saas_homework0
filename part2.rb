@@ -1,8 +1,9 @@
-def hell0(name)
+def hello(name)
 	"Hello, " << name
 end
 
 def starts_with_consonant?(s)
+	return false if s == ""
 	s =~ /^([AIOUE]|[^A-Z]).*$/i ? false : true
 end
 
